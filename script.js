@@ -3,7 +3,12 @@ document.getElementById("yesBtn").addEventListener("click", function() {
 });
 
 document.getElementById("noBtn").addEventListener("mouseover", function() {
-    this.style.position = "absolute";
-    this.style.left = Math.random() * (window.innerWidth - 100) + "px";
-    this.style.top = Math.random() * (window.innerHeight - 50) + "px";
+    let containerWidth = 375;  // Mobile width
+    let containerHeight = 667; // Mobile height
+
+    let newX = Math.random() * (containerWidth - 100);
+    let newY = Math.random() * (containerHeight - 50);
+
+    this.style.left = newX + "px";
+    this.style.top = newY + "px";
 });
