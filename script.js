@@ -2,7 +2,7 @@
 if (document.querySelector('.proposal-page')) {
     // Create floating hearts
     function createHearts() {
-        const hearts = '❤️💖💝💕';
+        const hearts = '❤️❤️❤️❤️❤️❤️❤️❤️';
         for (let i = 0; i < 20; i++) {
             const heart = document.createElement('div');
             heart.className = 'floating-heart';
