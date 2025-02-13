@@ -220,4 +220,15 @@ body {
         width: 70vw;
         margin: 15px auto;
     }
+
+    /* Set a standard height for the celebration page */
+    .celebration-page {
+        height: 100vh; /* Full viewport height */
+        overflow-y: auto; /* Allows vertical scrolling if content exceeds height */
+    }
+
+    body {
+        height: 100vh; /* Ensures body takes up full height of viewport */
+        overflow: hidden; /* Prevents horizontal scrolling */
+    }
 }
