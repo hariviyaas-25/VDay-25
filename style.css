@@ -15,7 +15,67 @@ body {
     justify-content: center;
 }
 
-/* ... (keeping other proposal page styles the same) ... */
+.container {
+    text-align: center;
+}
+
+.question {
+    font-size: 3rem;
+    color: #FF1493;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bongo-cat {
+    width: 300px;
+    margin: 2rem 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    transition: transform 0.2s;
+}
+
+.yes-btn {
+    background-color: #FF69B4;
+    color: white;
+}
+
+.yes-btn:hover {
+    transform: scale(1.1);
+    background-color: #FF1493;
+}
+
+.no-btn {
+    background-color: #FFC0CB;
+    color: #FF1493;
+    position: relative;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-100vh) rotate(360deg); }
+}
+
+.floating-heart {
+    position: fixed;
+    color: #FF69B4;
+    opacity: 0.6;
+    animation: float 10s linear infinite;
+    z-index: -1;
+}
 
 /* Celebration page specific styles */
 .celebration-page {
