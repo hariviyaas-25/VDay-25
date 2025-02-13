@@ -3,11 +3,12 @@ document.getElementById("yesBtn").addEventListener("click", function() {
 });
 
 document.getElementById("noBtn").addEventListener("mouseover", function() {
-    let containerWidth = 375;  // Mobile width
-    let containerHeight = 667; // Mobile height
+    let container = document.querySelector(".container");
+    let maxWidth = container.clientWidth - this.clientWidth;
+    let maxHeight = container.clientHeight - this.clientHeight;
 
-    let newX = Math.random() * (containerWidth - 100);
-    let newY = Math.random() * (containerHeight - 50);
+    let newX = Math.random() * maxWidth;
+    let newY = Math.random() * maxHeight;
 
     this.style.left = newX + "px";
     this.style.top = newY + "px";
