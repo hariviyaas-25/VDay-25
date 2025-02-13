@@ -123,7 +123,7 @@ body {
     display: block;
     width: min(300px, 80vw); /* Responsive width */
     margin: 20px auto;
-    z-index: 1;
+    z-index: 10;
 }
 
 .yes-gif {
@@ -133,8 +133,8 @@ body {
 }
 
 #yes1 {
-    top: 30vh;
-    left: 10%;
+    top: 60vh;
+    left: 30%;
     animation: floatAnimation1 6s infinite alternate;
 }
 
@@ -145,8 +145,8 @@ body {
 }
 
 #yes3 {
-    top: 60vh;
-    left: 30%;
+    top: 30vh;
+    left: 10%;
     animation: floatAnimation3 7s infinite alternate;
 }
 
@@ -186,18 +186,18 @@ body {
     }
 
     #yes1 {
-        top: 25vh;
-        left: 5%;
+        top: 50vh;
+        left: 40%;
     }
 
     #yes2 {
-        top: 35vh;
+        top: 45vh;
         right: 5%;
     }
 
     #yes3 {
-        top: 50vh;
-        left: 40%;
+        top: 40vh;
+        left: 5%;
     }
 }
 
